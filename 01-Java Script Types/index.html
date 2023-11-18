@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+    <!-- we should load CSS first -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- inline JS -->
+<!-- NOTE:: Single Quotes -->
+<body onload="alert('Inline JS');">
+    <h1>Hello World!</h1>
+
+  
+
+    <!-- Script should be placed at last, because all elements would have laoded by then -->
+    <!-- Internal JS -->
+    <!-- Loads before Inline-->
+    <!-- Also position matters, but internal and external load before inline-->
+    <script type="text/javascript">
+        alert("Internal JS");
+
+    </script>
+
+    <!-- External JS -->
+    <script src="index.js"></script>
+
+    <!-- If we place CSS here, it gets loaded at last -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+</body>
+
+</html>
